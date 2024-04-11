@@ -84,7 +84,7 @@ int binary_tree_is_root(const binary_tree_t *node);
  *
  * @tree: Pointer to the root node of the tree to traverse
  * @func:  pointer to a function to call for each node.
- *              The value in the node must be passed as a parameter to this function
+ * The value in the node must be passed as a parameter to this function
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 
@@ -98,12 +98,21 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 
 /**
- * binary_tree_postorder - Goes through a binary tree using post-order traversal
+ * binary_tree_postorder - Goes through binary tree using post-order traversal
  *
  * @tree: Pointer to the root node of the tree to traverse
  * @func:  pointer to a function to call for each node.
  * The value in the node must be passed as a parameter to this function
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+
+/**
+ * binary_tree_height - Measures the height of a binary tree
+ *
+ * @tree: Pointer to the root node of the tree to measure the height
+ *
+ * Return: returns the hight or 0 on failure
+ */
+size_t binary_tree_height(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
