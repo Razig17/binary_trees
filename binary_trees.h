@@ -115,4 +115,13 @@ void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
  */
 size_t binary_tree_height(const binary_tree_t *tree);
 
+/**
+ * binary_tree_depth - Measures the depth of a binary tree
+ *
+ * @tree: Pointer to the root node of the tree to measure the depth
+ *
+ * Return: returns the depth or 0 on failure
+ */
+size_t binary_tree_depth(const binary_tree_t *tree);
+
 #endif /* _BINARY_TREES_H_ */
