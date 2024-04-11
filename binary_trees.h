@@ -133,4 +133,14 @@ size_t binary_tree_depth(const binary_tree_t *tree);
  */
 size_t binary_tree_size(const binary_tree_t *tree);
 
+/**
+ * binary_tree_leaves - Counts the leaves in a binary tree
+ *
+ * @tree: Pointer to the root node of the tree to count the leaves
+ *
+ * Return: returns the number of the leaves or 0 on failure
+ */
+size_t binary_tree_leaves(const binary_tree_t *tree);
+
+
 #endif /* _BINARY_TREES_H_ */
