@@ -143,4 +143,14 @@ size_t binary_tree_size(const binary_tree_t *tree);
 size_t binary_tree_leaves(const binary_tree_t *tree);
 
 
+/**
+ * binary_tree_nodes - Counts the nodes in a binary tree
+ *
+ * @tree: Pointer to the root node of the tree to count the nodes
+ *
+ * Return: returns the number of the nodes or 0 on failure
+ */
+size_t binary_tree_nodes(const binary_tree_t *tree);
+
+
 #endif /* _BINARY_TREES_H_ */
