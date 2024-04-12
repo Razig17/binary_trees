@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-#include <math.h>
 /**
  * binary_tree_levelorder - Goes through a binary tree
  * using level-order traversal
