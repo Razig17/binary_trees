@@ -3,6 +3,7 @@
 
 #include <stddef.h>
 #include <stdlib.h>
+#include <math.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -213,5 +214,14 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
  * Return: return a pointer to the lowest common ancestor , otherwise NULL
  */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
+
+/**
+ * binary_tree_levelorder - Goes through a binary tree using level-order traversal
+ *
+ * @tree: Pointer to the root node of the tree to traverse
+ * @func:  pointer to a function to call for each node.
+ * The value in the node must be passed as a parameter to this function
+ */
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 
 #endif /* _BINARY_TREES_H_ */
