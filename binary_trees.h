@@ -250,4 +250,13 @@ int is_complete(binary_tree_t **tree, size_t size);
  * Return: A pointer to the new root of the tree
  */
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+
+/**
+ * binary_tree_rotate_right - Performs a right-rotation on a binary tree
+ *
+ * @tree: Pointer to the root node of the tree to rotate
+ *
+ * Return: A pointer to the new root of the tree
+ */
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 #endif /* _BINARY_TREES_H_ */
