@@ -224,4 +224,21 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 
+/**
+ * binary_tree_is_complete - Checks if a binary tree is complete
+ *
+ * @tree: Pointer to the root node of the tree to check
+ * 
+ * Return: 1 if tree is complete, otherwise 0
+ */
+int binary_tree_is_complete(const binary_tree_t *tree);
+
+/**
+ * is_complete - Checks if a binary tree is complete from a queue
+ *
+ * @tree: Pointer to the queue
+ * @size: Size of the queue
+ * Return: 1 if tree is complete, otherwise 0
+ */
+int is_complete(binary_tree_t **tree, size_t size);
 #endif /* _BINARY_TREES_H_ */
